@@ -11,12 +11,12 @@ export const App = () => {
   return (
     <div
       style={{
-        height: '100vh',
-        display: 'flex',
+        padding: 60,
         justifyContent: 'center',
         alignItems: 'center',
         fontSize: 40,
         color: '#010101',
+        backgroundColor: '#caebdd',
       }}
     >
       <Profile
@@ -32,7 +32,7 @@ export const App = () => {
       />
       <Statistics title="Upload stats" stats={stat} />
       <FriendList friends={friends} />
-      <TransactionHistory items={transactions} />;
+      <TransactionHistory items={transactions} />
     </div>
   );
 };

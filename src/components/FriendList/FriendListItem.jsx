@@ -1,12 +1,14 @@
 import PropTypes from 'prop-types';
+import { Avatar, FriendStatus, ListOfFriendsItem } from './FriendList.styled';
+import { imgSize } from 'components/constants';
 
 export default function FriendListItem({ avatar, name, isOnline }) {
   return (
-    <li className="item">
-      <span className="status">{isOnline}</span>
-      <img className="avatar" src={avatar} alt="User avatar" width="48" />
+    <ListOfFriendsItem>
+      <FriendStatus $isOnline={isOnline}></FriendStatus>
+      <Avatar src={avatar} alt={name} width={imgSize.ms} />
       <p className="name">{name}</p>
-    </li>
+    </ListOfFriendsItem>
   );
 }
 
