@@ -43,7 +43,7 @@ export const ProfileDescr = styled('p')(() => {
     color: '#aea8a8',
     marginTop: 20,
     fontSize: 30,
-    marginBottom: 20,
+    marginBottom: 22,
   };
 });
 

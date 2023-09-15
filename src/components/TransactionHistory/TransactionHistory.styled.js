@@ -32,10 +32,6 @@ export const ActTabTitle = styled('th')(() => {
   };
 });
 
-export const ActTabBody = styled('tbody')(() => {
-  return {};
-});
-
 export const ActTabRow = styled('tr')(() => {
   return {
     color: '#aea8a8',

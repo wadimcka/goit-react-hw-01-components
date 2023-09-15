@@ -1,6 +1,5 @@
 import PropTypes from 'prop-types';
 import {
-  ActTabBody,
   ActTab,
   ActTabData,
   ActTabRow,
@@ -18,7 +17,7 @@ export default function TransactionHistory({ items }) {
         </tr>
       </thead>
 
-      <ActTabBody>
+      <tbody>
         {items.map(item => {
           return (
             <ActTabRow key={item.id}>
@@ -28,7 +27,7 @@ export default function TransactionHistory({ items }) {
             </ActTabRow>
           );
         })}
-      </ActTabBody>
+      </tbody>
     </ActTab>
   );
 }
