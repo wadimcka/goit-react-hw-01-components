@@ -1,0 +1,66 @@
+.profile {
+  width: 600px;
+  height: 700px;
+  padding-top: 60px;
+  margin: auto;
+  background-color: white;
+  border: 1px solid #8e8f99;
+  border-radius: 10px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+}
+
+.description {
+  margin-bottom: 60px;
+}
+
+.avatar {
+  margin: auto;
+  width: 300px;
+  height: auto;
+  margin-bottom: 62px;
+  border-radius: 100px;
+}
+
+.userName {
+  text-align: center;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.userDescr {
+  text-align: center;
+  color: #aea8a8;
+  margin-top: 20px;
+  font-size: 30px;
+  margin-bottom: 22px;
+}
+
+.stats {
+  display: flex;
+  justify-content: space-around;
+  /* background-color: #afafb2; */
+}
+
+.stats > li {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 200px;
+  height: 120px;
+  background-color: #f2f0f0;
+  border: 1px solid #8e8f99;
+
+  &:nth-of-type(1) {
+    border-bottom-left-radius: 10px;
+  }
+
+  &:nth-of-type(3) {
+    border-bottom-right-radius: 10px;
+  }
+}
+
+.label {
+  color: #aea8a8;
+  font-size: 30px;
+}
